@@ -11,7 +11,7 @@ resource "aws_security_group" "bastion" {
     protocol  = "tcp"
 
     cidr_blocks = [
-      "112.154.140.25/32" # Change here to your office or house ...
+      "58.120.172.244/32" # Change here to your office or house ...
     ]
   }
 
