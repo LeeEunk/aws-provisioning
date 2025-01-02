@@ -59,6 +59,11 @@ output "public_subnets" {
   value       = aws_subnet.public.*.id
 }
 
+output "first_public_subnet" {
+   description = "first public subnet"
+   value = element(aws_subnet.public.*.id, 0)
+}
+
 # Private Database Subnets
 output "db_private_subnets" {
   description = "List of DB private subnet ID in VPC"

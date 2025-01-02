@@ -1,12 +1,12 @@
 aws_region   = "ap-northeast-2"
-cidr_numeral = "10"
+cidr_numeral = "11"
 
 # Please change "devart" to what you want to use
-# d after name indicates develop. This means that devartd_apnortheast2 VPC is for development environment VPC in Seoul Region.
-vpc_name = "devartd_apnortheast2"
+# d after name indicates develop. This means that devarts_apnortheast2 VPC is for development environment VPC in Seoul Region.
+vpc_name = "devarts_apnortheast2"
 
 # Billing tag in this VPC 
-billing_tag = "dev"
+billing_tag = "stage"
 
 # Availability Zone list
 availability_zones = ["ap-northeast-2a", "ap-northeast-2c"]
@@ -16,11 +16,11 @@ availability_zones_without_b = ["ap-northeast-2a", "ap-northeast-2c"]
 
 # shard_id will be used later when creating other resources.
 # With shard_id, you could distinguish which environment the resource belongs to 
-shard_id       = "devartdapne2"
-shard_short_id = "devart01d"
+shard_id       = "devartsapne2"
+shard_short_id = "devart01s"
 
 # d means develop
-env_suffix = "d"
+env_suffix = "s"
 
 # Peering List
 vpc_peering_list = [

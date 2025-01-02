@@ -1,3 +1,4 @@
+/*
 # routes for internet gateway which will be set in public subent
 resource "aws_route" "public_internet_gateway" {
   route_table_id         = aws_route_table.public.id
@@ -12,3 +13,4 @@ resource "aws_route" "private_nat" {
   destination_cidr_block = "0.0.0.0/0"
   nat_gateway_id         = element(aws_nat_gateway.nat.*.id, count.index)
 }
+*/
