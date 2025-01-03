@@ -6,7 +6,7 @@ cidr_numeral = "11"
 vpc_name = "devarts_apnortheast2"
 
 # Billing tag in this VPC 
-billing_tag = "dev"
+billing_tag = "stage"
 
 # Availability Zone list
 availability_zones = ["ap-northeast-2a", "ap-northeast-2c"]
@@ -17,17 +17,17 @@ availability_zones_without_b = ["ap-northeast-2a", "ap-northeast-2c"]
 # shard_id will be used later when creating other resources.
 # With shard_id, you could distinguish which environment the resource belongs to 
 shard_id       = "devartsapne2"
-shard_short_id = "devart01d"
+shard_short_id = "devart01s"
 
 # d means develop
-env_suffix = "d"
+env_suffix = "s"
 
 # Peering List
 
 peering_requests = [
   {
     "id"         = "pcx-0021adf8d3b926dbd"
-    "vpc_name"   = "devartd_apnortheast2"
+    "vpc_name"   = "devarts_apnortheast2"
     "cidr_block" = "10.10.0.0/16"
-  },
+  }
 ]
